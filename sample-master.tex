@@ -24,6 +24,9 @@
 % 正文页眉页脚样式
 \pagestyle{mainmatter}
 
+% 将表格的行距增大为正常的1.5倍行距
+\renewcommand{\arraystretch}{1.5}
+
 % 正文
 \include{data/chapter1-intro}
 \include{data/chapter2-config}
@@ -46,5 +49,7 @@
 % 附页
 \include{data/master/back1-achievement}
 \include{data/master/back2-thanks}
+% 注：硕士论文不需要“关于作者”一章
 \include{data/master/back3-aboutauthor}
+\cleardoublepage
 \end{document}
